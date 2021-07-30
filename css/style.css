@@ -231,16 +231,18 @@ h1 {
 .body {
     position: relative;
     width: 100%;
-    height: 4600px;
+    height: 5000px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+/* about */
 .about {
-    position: absolute;
     width: 1000px;
     height: 442px;
-    top: 120px;
-    left: 240px;
+    margin-top: 150px;
 }
 /* ------------------------------------------ */
 .restangle-25 {
@@ -281,11 +283,9 @@ h1 {
 /* start */
 
 .start {
-    position: absolute;
     width: 1000px;
     height: 442px;
-    top: 682px;
-    left: 240px;
+    margin-top: 200px;
 
     display: grid;
     grid-template-columns: 250px 80px 170px 250px 250px;
@@ -395,11 +395,10 @@ h1 {
 /* advantages */
 
 .advantages {
-    position: absolute;
+    /* position: absolute; */
     width: 1000px;
     height: 442px;
-    top: 1244px;
-    left: 240px;
+    margin-top: 200px;
 
     display: grid;
     grid-template-columns: 333.33px 333.33px 333.33px;
@@ -454,12 +453,9 @@ h1 {
 /* partners */
 
 .partners {
-    /* background-color: gray; */
-    position: absolute;
     width: 1000px;
     height: 442px;
-    top: 1806px;
-    left: 240px;
+    margin-top: 200px;
 
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
@@ -585,12 +581,9 @@ h5 {
 /* program */
 
 .program {
-    /* background-color: gray; */
-    position: absolute;
     width: 750px;
     height: 1018px;
-    top: 2348px;
-    left: 360px;
+    margin-top: 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -739,12 +732,9 @@ h5 {
 /* teachers */
 
 .teachers {
-    /* background-color: gray; */
-    position: absolute;
     width: 1000px;
     height: 480px;
-    top: 3448px;
-    left: 240px;
+    margin-top: 200px;
 }
 
 /* -------------------------------------- */
@@ -850,15 +840,16 @@ h5 {
     margin-left: 30px;
     border: 1px solid white;
 }
+.teachers-button:hover {
+    background-color: white;
+    color: black;
+}
 /* footer */
 
 footer {
-    /* background-color: gray; */
-    position: absolute;
     width: 547px;
     height: 442px;
-    top: 4128px;
-    left: 490px;
+    margin-top: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 4fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 0.5fr 0.3fr 0.5fr 0.5fr 0.5fr 1.5fr;
@@ -886,13 +877,13 @@ footer > form {
     grid-row: 5/6;
     width: 100%;
     height: 100%;
+    color: white;
 }
 footer > form > input {
     width: 65%;
     height: 100%;
     border-radius: 50px 0px 0px 50px;
     opacity: 0.25;
-    color: white;
 }
 
 footer > form > button {
@@ -903,6 +894,7 @@ footer > form > button {
     left: -30px;
     color: white;
     background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+    cursor: pointer;
 }
 footer > div {
     grid-column: 3/6;
